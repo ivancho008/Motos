@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motos Custom | MotoWorld</title>
+    <link rel="stylesheet" href="../_CSS/estilos.css">
+    <style>
+        /* Estilo interno específico para custom */
+        .custom-header {
+            background-color: #8e44ad; /* Morado */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        /* Estilo para opciones de personalización */
+        .custom-options {
+            margin: 25px 0;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #8e44ad;
+        }
+        
+        .paint-sample {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 4px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .paint-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            padding: 3px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MotoWorld</h1>
+        <p>Motos Custom - Estilo y Personalización</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="pagina_1.html">Deportivas</a></li>
+            <li><a href="pagina_2.html">Custom</a></li>
+            <li><a href="pagina_3.html">Touring</a></li>
+            <li><a href="pagina_4.html">Naked</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="custom-header">
+            <h2>Motos Custom</h2>
+            <p>Para quienes buscan estilo único y personalización extrema</p>
+        </div>
+        
+        <article class="moto-card">
+            <img src="../images/custom1.jpg" alt="Harley-Davidson Softail">
+            <div class="moto-info">
+                <h2 style="color: #d35400;">Harley-Davidson Softail</h2>
+                <p class="precio">Desde $18,000</p>
+                <p>La familia Softail de Harley-Davidson combina líneas clásicas con tecnología moderna para una experiencia de conducción única.</p>
+                
+                <div class="especificaciones">
+                    <h3>Especificaciones técnicas</h3>
+                    <ul>
+                        <li>Motor: Milwaukee-Eight 107 (1,746cc)</li>
+                        <li>Potencia: 92 CV</li>
+                        <li>Peso: 297 kg</li>
+                        <li>Par motor: 150 Nm</li>
+                    </ul>
+                </div>
+                
+                <!-- Opciones de personalización integradas -->
+                <div class="custom-options">
+                    <h3>Personaliza tu Softail</h3>
+                    <p>Elige entre nuestras opciones de pintura personalizada:</p>
+                    
+                    <div>
+                        <div class="paint-sample" style="background-color: #8e44ad;">
+                            <span class="paint-label">#8e44ad</span>
+                        </div>
+                        <div class="paint-sample" style="background-color: hsl(24, 100%, 50%);">
+                            <span class="paint-label">hsl(24,100%,50%)</span>
+                        </div>
+                        <div class="paint-sample" style="background-color: rgba(0, 0, 0, 0.9);">
+                            <span class="paint-label">rgba(0,0,0,0.9)</span>
+                        </div>
+                        <div class="paint-sample" style="background-color: #d35400;">
+                            <span class="paint-label">#d35400</span>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 15px; font-style: italic;">* Los colores mostrados usan diferentes formatos CSS: hexadecimal, HSL y RGBA</p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="moto-card">
+            <img src="../images/custom2.jpg" alt="Indian Chief">
+            <div class="moto-info">
+                <h2 style="color: #d35400;">Indian Chief</h2>
+                <p class="precio">Desde $19,000</p>
+                <p>La Indian Chief es una motocicleta que rinde homenaje a los modelos clásicos de Indian con tecnología moderna.</p>
+                
+                <div class="especificaciones">
+                    <h3>Especificaciones técnicas</h3>
+                    <ul>
+                        <li>Motor: Thunderstroke 111 (1,811cc)</li>
+                        <li>Potencia: 88 CV</li>
+                        <li>Peso: 336 kg</li>
+                        <li>Par motor: 150 Nm</li>
+                    </ul>
+                </div>
+                
+                <!-- Ejemplo de jerarquía de estilos integrado -->
+                <div class="custom-options" style="border-left-color: #d35400;">
+                    <h3 style="color: #8e44ad;">Jerarquía de Estilos</h3>
+                    <p>Este título usa el color morado (#8e44ad) definido en estilos internos, pero los nombres de modelos arriba usan:</p>
+                    
+                    <div style="background-color: white; padding: 15px; border-radius: 4px; margin-top: 10px;">
+                        <p><strong style="color: #d35400;">Estilo en línea</strong> (en el HTML) que sobrescribe el estilo interno:</p>
+             
+                        
+                        <div style="margin-top: 15px; padding: 10px; border: 2px dashed hsla(24, 100%, 50%, 0.5);">
+                            <p>Los bordes también pueden usar colores HSLA para efectos especiales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

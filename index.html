@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoWorld - Las mejores motocicletas</title>
+    <link rel="stylesheet" href="_CSS/estilos.css">
+    <style>
+        /** Estilo interno - Verde Yamaha con transparencia */ 
+        .destacado {
+            background-color: rgba(0, 86, 179, 0.1); /** Azul Yamaha con transparencia **/
+            padding: 1rem;
+            border-radius: 8px;
+            border: 2px solid #0056b3; /** Azul Yamaha **/
+        }
+        
+        /* Estilos para la paleta de colores de motos **/
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .color-card {
+            flex: 1;
+            min-width: 150px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .color-sample {
+            height: 80px;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            font-weight: bold;
+        }
+        
+        .color-info {
+            padding: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MotoWorld</h1>
+        <p>Tu guía definitiva sobre motocicletas</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./_HTML/pagina_1.html">Deportivas</a></li>
+            <li><a href="./_HTML/pagina_2.html">Custom</a></li>
+            <li><a href="./_HTML/pagina_3.html">Touring</a></li>
+            <li><a href="./_HTML/pagina_4.html">Naked</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="destacado">
+            <h2>Bienvenido a MotoWorld</h2>
+            <p>Descubre el apasionante mundo de las motocicletas. En nuestra página encontrarás información detallada sobre los diferentes tipos de motos, sus características y lo último en tecnología motociclista.</p>
+        </section>
+        
+        <article class="moto-card">
+            <img style="max-width: 500px; margin-left: 280px;" src="_IMG/mt09-black-banner.webp" alt="Yamaha MT-09">
+            <div class="moto-info">
+                <h2>Yamaha MT-09 - Motocicleta del mes</h2>
+                <p class="precio">Desde $62.000.000,00</p>
+                <p>La Yamaha MT-09 combina un diseño agresivo con un potente motor de 3 cilindros que ofrece una experiencia de conducción emocionante.</p>
+                
+                <div class="especificaciones">
+                    <h3>Especificaciones técnicas</h3>
+                    <ul>
+                        <li>Motor: 890cc, 3 cilindros</li>
+                        <li>Potencia: 119 CV</li>
+                        <li>Peso: 193 kg</li>
+                        <li>Velocidad máxima: 225 km/h</li>
+                    </ul>
+                </div>
+                
+                <!-- Paleta de colores integrada -->
+                <div class="color-features">
+                    <h3>Colores disponibles 2023</h3>
+                    <p>Explora nuestra gama de colores con diferentes formatos CSS:</p>
+                    
+                    <div class="color-palette">
+                        <div class="color-card">
+                            <div class="color-sample" style="background-color: #0056b3;">Azul</div>
+                            <div class="color-info">
+                                <h4>Azul Yamaha</h4>
+                                <p>Hex: #0056b3</p>
+                                <p>RGB: rgb(0, 86, 179)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="color-card">
+                            <div class="color-sample" style="background-color: rgb(200, 16, 46);">Rojo</div>
+                            <div class="color-info">
+                                <h4>Rojo Racing</h4>
+                                <p>HSL: hsl(350, 85%, 42%)</p>
+                                <p>RGBA: rgba(200,16,46,0.7)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="color-card">
+                            <div class="color-sample" style="background-color: hsl(0, 0%, 15%);">Negro</div>
+                            <div class="color-info">
+                                <h4>Negro Intenso</h4>
+                                <p>Hex: #262626</p>
+                                <p>HSLA: hsla(0,0%,15%,0.9)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Ejemplo de jerarquía integrado en características técnicas -->
+        <article class="moto-tech">
+            <h2>Tecnología de Pintura</h2>
+            <p>Nuestras motos utilizan sistemas de pintura avanzados con diferentes capas y efectos:</p>
+            
+            <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <h3 style="color: #e74c3c;">Capa Base</h3>
+                <p style="border-bottom: 2px solid rgba(231, 76, 60, 0.5); padding-bottom: 10px;">
+                    La capa base usa colores sólidos definidos.
+                </p>
+                
+                <h3 style="color: rgb(52, 152, 219); margin-top: 20px;">Capa Efecto</h3>
+                <p style="border-bottom: 2px solid rgba(52, 152, 219, 0.5); padding-bottom: 10px;">
+                    Los efectos especiales usan valores RGBA para transparencia
+                </p>
+                
+                <h3 style="color: hsl(145, 63%, 49%); margin-top: 20px;">Capa Protectora</h3>
+                <p>
+                    La capa final usa formatos HSL para ajustes precisos 
+                </p>
+            </div>
+            
+         
+        </article>
+    </main>
+</body>
+</html>
