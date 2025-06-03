@@ -113,3 +113,15 @@ main {
     background-color: #ecf0f1; /* Gris claro */
     border-left: 4px solid #3498db; /* Azul */
 }
+/* Estilos generales del footer */
+footer {
+    background-color: #333;       /* Color de fondo */
+    color: white;                /* Color del texto */
+    text-align: center;         
+    padding: 10px;               /* Espaciado interno */
+    position: fixed;             /* Fijo en la parte inferior */
+    bottom: 0;                   /* Pegado al fond */
+    width: 100%;                 
+    font-family: Arial, sans-serif; 
+}
+
